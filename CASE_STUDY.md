@@ -1,11 +1,11 @@
 # CASE STUDY — Brute Force Attack on Small Retail SME
 
 ## Executive Summary
-A mid-sized retail SME (50 endpoints, 2 Windows servers, 1 Linux server, remote admin via RDP/VPN) experienced a credential-stuffing brute-force campaign against remote admin services. This project demonstrates detection, automated triage, enrichment, and recommended response for that scenario.
+A small-sized retail SME (2 endpoints, 1 Windows servers, 1 ubuntu server, remote admin via SSH) experienced a credential-stuffing brute-force campaign against remote admin services. This project demonstrates detection, automated triage, enrichment, and recommended response for that scenario.
 
 ## SME profile
 - Industry: Retail (e-commerce + POS)
-- Infrastructure: 50 workstations, 3 servers, perimeter firewall with basic blocking rules
+- Infrastructure: 2 workstations
 - Constraints: Limited SOC staff (1-2 people), limited budget
 
 ## Objectives
@@ -14,7 +14,7 @@ A mid-sized retail SME (50 endpoints, 2 Windows servers, 1 Linux server, remote 
 3. Create reproducible runbook for SMEs to follow.
 
 ## Timeline of simulated attack
-- T0: Attack begins from IP `198.51.100.15` attempting RDP/SSH logins.
+- T0: Attack begins from IP `198.51.100.15` attempting SSH logins.
 - T0+5 min: Splunk saved search detects 6 failed attempts from same src_ip to host `host-sales-01`.
 - T0+6 min: Splunk alert fires and webhook sends payload to Shuffle.
 - T0+7 min: Shuffle playbook creates a TheHive case, enriches IP with reputation services, and checks for related events across hosts.
