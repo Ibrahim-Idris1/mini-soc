@@ -43,8 +43,6 @@ A small-sized retail SME (2 endpoints, 1 Windows servers, 1 ubuntu server, remot
 - Automate enrichment to reduce manual lookup.
 - Automate blocking only after verification (to avoid false positives).
 
-## Artifacts
-- `artifacts/sample-logs/host1_failed_logins.log`
-- Splunk search, dashboard, playbook JSON files.
+
 
 
