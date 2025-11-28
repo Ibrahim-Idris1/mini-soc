@@ -111,7 +111,8 @@ Shodan
 
 IPinfo
 
+OTX AlienVault
+
+
 Note: I did not use cortex for enrichment because this lab is strickly focused and build in a light weight environment so adding cortex, thehive, shuffle and splunk running at the same time would consume a lot of system resources so i have to let go of one and use AbuseIPDB as an alternative for cortex enrichment.
 CrowdStrike Intel
-
-OTX AlienVault
